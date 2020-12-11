@@ -1,0 +1,41 @@
+{
+  "name": "abject-transience",
+  "version": "1.0.0",
+  "description": "A Phaser Game Jam",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server  --host=0.0.0.0 --port=$PORT --disable-host-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwwr/abject-transience.git"
+  },
+  "author": "dwwr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwwr/abject-transience/issues"
+  },
+  "homepage": "https://github.com/dwwr/abject-transience#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "phaser": "^3.24.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "heroku-run-build-script": true
+}
