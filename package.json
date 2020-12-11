@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dwwr/abject-transience#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "node": "^15.3.0",
     "path": "^0.12.7",
     "phaser": "^3.24.1"
   },
