@@ -1,6 +1,7 @@
 {
   "name": "abject-transience",
   "version": "1.0.0",
+  "type": "module",
   "description": "A Phaser Game Jam",
   "main": "src/index.js",
   "scripts": {
