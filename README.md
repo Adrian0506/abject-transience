@@ -5,5 +5,7 @@
 
 # A Short Overview:
 >npm install dependences and npm start
->npm build to bundle
+>npm build the bundle
+
+>
 

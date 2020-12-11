@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+var SRC = path.resolve(__dirname, 'src/assets');
 
 module.exports = {
   mode: "development",
@@ -22,6 +23,11 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
         use: "file-loader"
+      },
+      {
+        test: /\.mp3$/,
+        include: SRC,
+        loader: 'file-loader'
       }
     ]
   },

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "npm run build && webpack-dev-server --config webpack/base.js --open --host=0.0.0.0 --port=$PORT --disable-host-check"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,6 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "heroku-run-build-script": true
 }
