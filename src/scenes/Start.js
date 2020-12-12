@@ -35,12 +35,12 @@ class Start extends Phaser.Scene {
   preload() {
     //load assets
     this.load.crossOrigin = true;
-    this.load.audio('theme', 'http://bunhole.s3-us-west-2.amazonaws.com/LastSaveCrystal.mp3');
-    this.load.image('hole', 'http://bunhole.s3-us-west-2.amazonaws.com/hole.png');
-    this.load.image('blue', 'http://bunhole.s3-us-west-2.amazonaws.com/blue.png');
-    this.load.image('github', 'http://bunhole.s3-us-west-2.amazonaws.com/gh.png');
-    this.load.spritesheet('hunbun','http://bunhole.s3-us-west-2.amazonaws.com/hunbun.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('flower', 'http://bunhole.s3-us-west-2.amazonaws.com/flower.png', { frameWidth: 72.5, frameHeight: 96 });
+    this.load.audio('theme', 'https://bunhole.s3-us-west-2.amazonaws.com/LastSaveCrystal.mp3');
+    this.load.image('hole', 'https://bunhole.s3-us-west-2.amazonaws.com/hole.png');
+    this.load.image('blue', 'https://bunhole.s3-us-west-2.amazonaws.com/blue.png');
+    this.load.image('github', 'https://bunhole.s3-us-west-2.amazonaws.com/gh.png');
+    this.load.spritesheet('hunbun','https://bunhole.s3-us-west-2.amazonaws.com/hunbun.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet('flower', 'https://bunhole.s3-us-west-2.amazonaws.com/flower.png', { frameWidth: 72.5, frameHeight: 96 });
 
     //titles & formatting
     this.title = this.add.text(400, 100, 'Lair of the Hunbun', { fontFamily: 'Futura', fontStyle: 'italic', fontWeight: 'bold',fontSize: '50px', fill:'#3366ff'});
