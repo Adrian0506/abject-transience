@@ -34,12 +34,13 @@ class Start extends Phaser.Scene {
 
   preload() {
     //load assets
-    this.load.audio('theme', './src/assets/LastSaveCrystal.mp3');
-    this.load.image('hole', './src/assets/hole.png');
-    this.load.image('blue', './src/assets/blue.png');
-    this.load.image('github', './src/assets/gh.png');
-    this.load.spritesheet('hunbun','./src/assets/hunbun.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet('flower', './src/assets/flower.png', { frameWidth: 72.5, frameHeight: 96 });
+    this.load.crossOrigin = true;
+    this.load.audio('theme', 'http://bunhole.s3-us-west-2.amazonaws.com/LastSaveCrystal.mp3');
+    this.load.image('hole', 'http://bunhole.s3-us-west-2.amazonaws.com/hole.png');
+    this.load.image('blue', 'http://bunhole.s3-us-west-2.amazonaws.com/blue.png');
+    this.load.image('github', 'http://bunhole.s3-us-west-2.amazonaws.com/gh.png');
+    this.load.spritesheet('hunbun','http://bunhole.s3-us-west-2.amazonaws.com/hunbun.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet('flower', 'http://bunhole.s3-us-west-2.amazonaws.com/flower.png', { frameWidth: 72.5, frameHeight: 96 });
 
     //titles & formatting
     this.title = this.add.text(400, 100, 'Lair of the Hunbun', { fontFamily: 'Futura', fontStyle: 'italic', fontWeight: 'bold',fontSize: '50px', fill:'#3366ff'});

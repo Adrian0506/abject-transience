@@ -9,11 +9,12 @@ class Level1 extends Phaser.Scene {
   };
 
   preload () {
-    this.load.spritesheet('hunbun','./src/assets/hunbun.png', { frameWidth: 64, frameHeight: 64 });
-    this.load.image('cave', './src/assets/cave.jpg');
-    this.load.image('light', './src/assets/light.png');
-    this.load.image('floor', './src/assets/platform.png');
-    this.load.image('platform', './src/assets/platformSmall.png');
+    this.load.crossOrigin = true;
+    this.load.spritesheet('hunbun','http://bunhole.s3-us-west-2.amazonaws.com/hunbun.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.image('cave', 'http://bunhole.s3-us-west-2.amazonaws.com/cave.jpg');
+    this.load.image('light', 'http://bunhole.s3-us-west-2.amazonaws.com/light.png');
+    this.load.image('floor', 'http://bunhole.s3-us-west-2.amazonaws.com/platform.png');
+    this.load.image('platform', 'http://bunhole.s3-us-west-2.amazonaws.com/platformSmall.png');
   }
 
   create () {
